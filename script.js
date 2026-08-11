@@ -7,7 +7,7 @@ const particles = document.getElementById("particles");
 function makeParticle() {
   const p = document.createElement("div");
   p.className = "particle";
-  p.textContent = ["🎓", "🚀", "⚡", "🍺", "🍕", "🔥", "✨"][Math.floor(Math.random() * 7)];
+  p.textContent = ["🎓", "🚀", "⚡", "🥂", "🍕", "🔥", "☕️"][Math.floor(Math.random() * 7)];
   p.style.left = Math.random() * 100 + "vw";
   p.style.setProperty("--drift", (Math.random() * 240 - 120) + "px");
   p.style.animationDuration = (4 + Math.random() * 5) + "s";
@@ -22,8 +22,8 @@ function triggerEffect(type) {
   confettiOverload();
   let toastMsg = "";
   if (type === 'proxy') toastMsg = "📢 Proxy marked! Attendance saved! 🎓";
-  if (type === 'chai') toastMsg = "☕ Tapri Chai break activated!";
-  if (type === 'treat') toastMsg = "🍕 Party treat demanded from Applooo!";
+  if (type === 'coffee') toastMsg = "☕ Tapri Chai break activated!";
+  if (type === 'Johnnny') toastMsg = "🍕 Party treat demanded from Applooo!";
   if (type === 'night') toastMsg = "🌙 Night out plan locked!";
 
   const toast = document.createElement("div");
@@ -46,7 +46,7 @@ function triggerEffect(type) {
 function confettiOverload() {
   for (let i = 0; i < 80; i++) {
     const c = document.createElement("div");
-    c.textContent = ["🎓", "✨", "🚀", "💥", "🍺", "🍕", "🔥"][Math.floor(Math.random() * 7)];
+    c.textContent = ["🎓", "✨", "🚀", "💥", "🥂", "🍕", "🔥"][Math.floor(Math.random() * 7)];
     c.style.position = "fixed";
     c.style.left = "50vw";
     c.style.top = "45vh";
