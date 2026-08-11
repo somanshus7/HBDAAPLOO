@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f19">
+  <title>Happy Birthday Applooo! 🚀🔥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="space-bg"></div>
+  <div id="stars"></div>
+  <div id="particles"></div>
+
+  <main class="page">
+    <!-- Hero Section -->
+    <section class="hero glass">
+      <div class="badge">⚡ College Legend & Best Friend 🎓</div>
+      <h1>Happy Birthday<br><span class="glitch-text">Aryaman!</span></h1>
+      <p class="nickname">aka <span class="highlight">Applooo</span> 🚀</p>
+      
+      <p class="intro">To the one who survived late-night cramming, proxy attendance, infinite chai breaks, and endless campus chaos with me.</p>
+
+      <!-- Polaroid Stack with Interactive Flip -->
+      <div class="photo-gallery">
+        <div class="polaroid-card tilt-left" id="photo1Card">
+          <div class="badge-tag">College Days 📸</div>
+          <img src="applooo1.jpeg" alt="Aryaman Photo 1" class="main-photo" onerror="this.src='https://via.placeholder.com/400x400/1e293b/ffffff?text=Add+applooo1.jpeg'">
+          <div class="photo-caption">The Campus Mastermind 😎</div>
+        </div>
+      </div>
+
+      <!-- Interactive Mini Game / Secret Passcode -->
+      <div class="interactive-box glass-sub">
+        <h3>🔓 Unlock Applooo's Birthday Dossier</h3>
+        <p>Press the button to launch the celebration radar!</p>
+        <button id="launchBtn" class="cyber-btn"><span>🚀</span> LAUNCH PARTY PROTOCOL</button>
+      </div>
+
+      <p class="hint">Tap above to unlock the memory vault!</p>
+    </section>
+
+    <!-- Main Secret Birthday Dossier Section -->
+    <section id="message" class="message glass hidden">
+      <div class="cyber-badge">SYSTEM STATUS: LEVEL UP 📈</div>
+      <h2>Dear Applooo (Aryaman) 🥂</h2>
+
+      <div class="quote">
+        "College would have been a total snooze fest without a chaotic partner-in-crime like you."
+      </div>
+
+      <p>From skipping lectures to legendary late-night banter, back-bench wisdom, and surviving semester stress together—college truly hit different because you were in it.</p>
+
+      <p>You’re not just a best friend; you’re family. Here's to making more insane memories, winning big in life, and never growing up too fast!</p>
+
+      <!-- Interactive Soundboard -->
+      <div class="soundboard">
+        <h3>🔊 College Memory Soundboard</h3>
+        <div class="sound-grid">
+          <button class="sound-chip" onclick="triggerEffect('proxy')">🙋‍♂️ "Proxy Lagao!"</button>
+          <button class="sound-chip" onclick="triggerEffect('chai')">☕ "Chai Peene Chalein?"</button>
+          <button class="sound-chip" onclick="triggerEffect('treat')">🍕 "Where's the Treat?"</button>
+          <button class="sound-chip" onclick="triggerEffect('night')">🌙 "Night Out Plan!"</button>
+        </div>
+      </div>
+
+      <!-- Second Photo Memory -->
+      <div class="memory-card">
+        <div class="polaroid-card mini">
+          <img src="applooo2.jpeg" alt="Aryaman Photo 2" onerror="this.src='https://via.placeholder.com/300x300/1e293b/ffffff?text=Add+applooo2.jpeg'">
+        </div>
+        <div class="memory-text">
+          <strong>Brotherhood Beyond Campus 💥</strong>
+          <span>Degree or no degree, having a legend like you by my side is the biggest win from college.</span>
+        </div>
+      </div>
+
+      <p class="final-line">May your year be packed with high packages, zero bugs, epic trips, and infinite wins! 🚀🔥</p>
+
+      <button id="celebrate" class="cyber-btn secondary">🎆 TRIGGER CONFETTI OVERLOAD</button>
+      <p class="forever">Backbenchers for life, Applooo! 🍻</p>
+    </section>
+
+    <footer>Designed with high energy for my college bestie, Aryaman (Applooo) 🎓⚡</footer>
+  </main>
+
+  <button id="musicBtn" class="music-btn" aria-label="Toggle music">🎵</button>
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
